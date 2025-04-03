@@ -1,0 +1,167 @@
+.section2 {
+
+}
+
+.section2-blok {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+.section2-blok__section {
+    width: 50%;
+}
+
+.section2-blok__section__p-1 {
+    letter-spacing: 2px;
+    font-size: 90%;
+    color: var(--dark-color);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.section2-blok__section__p-2 {
+    font-size: 90%;
+    color: var(--title-color);
+    letter-spacing: 0.2px;
+    line-height: 2;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.section2-blok__section__p-2 span {
+    color: var(--main-color);
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+    font-weight: 500;
+}
+
+.section2-blok__section h1 {
+    margin-bottom: 10px;
+    color: var(--title-color);
+}
+
+.section2-blok__section h1 span {
+    color: transparent; /* Убираем обычный цвет текста */
+    font-family: var(--playfair);
+    font-style: italic;
+    background-image: linear-gradient(to right, #d5aa6d, #9b6f45); /* Задаем градиент */
+    background-clip: text; /* Применяем градиент к тексту */
+    -webkit-background-clip: text; /* Для кроссбраузерности */
+    padding: 0 2px;
+}
+.section2-blok__section__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.section2-blok__section__container-part {
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.section2-blok__section__container-part p {
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.section2-blok__section__footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.section2-blok__section__footer p {
+    font-size: 90%;
+}
+
+.section2-blok__section__footer a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 130%;
+    color: var(--title-color);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.section2-blok__section__footer a:hover {
+    opacity: .5;
+}
+
+.section2-blok__section-2 {
+    background-image: url(/public/images/section2-bg.jpg);
+    position: relative;
+    min-height: 400px;
+}
+
+.section2-blok__section-2__blok {
+    position: absolute;
+    bottom: -30px;  
+    left: -20px;
+    padding: 100px 30px;
+    width: 300px;
+    background-color: #fff;
+    border: 5px solid var(--dark-color);
+    height: 400px;
+    background-image: url(/public/images/section2.jpg);
+    background-position: top center;
+}
+
+.section2-blok__section-2__blok h1 {
+    color: var(--dark-color);
+    font-size: 300%;
+}
+
+.section2-blok__section-2__blok p {
+    color: var(--dark-color);
+    font-size: 120%;
+}
+
+@media (max-width: 768px) {
+    .section2-blok {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .section2-blok__section {
+        width: 100%;
+    }
+    .section2-blok__section__p-1 {
+        font-size: 80%;
+    }
+    .section2-blok__section__p-2 {
+        font-size: 80%;
+    }
+    .section2-blok__section h1 {
+        font-size: 160%;
+    }
+    .section2-blok__section__footer {
+        gap: 10px;
+    }
+    .section2-blok__section__footer p {
+        font-size: 85%;
+    }
+    .section2-blok__section__footer a {
+        font-size: 110%;
+    }
+    .section2-blok__section-2__blok {
+        position: absolute;
+        bottom: -50px;  
+        left: 0;
+        padding: 70px 25px;
+        width: 250px;
+        background-color: #fff;
+        border: 5px solid var(--dark-color);
+        height: 350px;
+        background-image: url(/public/images/section2.jpg);
+        background-position: top center;
+    }
+}

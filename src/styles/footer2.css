@@ -1,0 +1,31 @@
+.footer2 {
+    background-color: var(--black-color);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2-blok p {
+    text-align: center;
+    color: var(--subtitle-color);
+    font-size: 90%;
+}
+
+.footer2-blok p a {
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer2-blok p a:hover {
+    opacity: .5;
+}
+
+@media (max-width: 768px) {
+    .footer2-blok p {
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,135 @@
+.section4 {
+    background-image: url(/public//images/section4-bg.png);
+    background-position: right;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.section4-blok {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.section4-blok__section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.section4-blok__section-1 p {
+    letter-spacing: 2px;
+    font-size: 90%;
+    color: var(--dark-color);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.section4-blok__section-1 h1 {
+    margin-bottom: 10px;
+    color: var(--title-color);
+}
+
+.section4-blok__section-1 h1 span {
+    color: transparent; /* Убираем обычный цвет текста */
+    font-family: var(--playfair);
+    font-style: italic;
+    background-image: linear-gradient(to right, #d5aa6d, #9b6f45); /* Задаем градиент */
+    background-clip: text; /* Применяем градиент к тексту */
+    -webkit-background-clip: text; /* Для кроссбраузерности */
+    padding: 0 2px;
+}
+
+.section4-blok__section-2 {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.section4-blok__section-2 p {
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 95%;
+}
+
+.section4-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section4-footer__section {
+    padding: 40px 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.section4-footer__section-1 {
+    background-color: var(--main-color);
+}
+
+.section4-footer__section-2 {
+    background-color: var(--title-color);
+}
+
+.section4-footer__section__p-1 {
+    font-size: 200%;
+    font-weight: 600;
+}
+
+.section4-footer__section__p-2 {
+    font-size: 110%;
+}
+
+@media (max-width: 1300px) {
+    .section4-footer {
+        flex-wrap: wrap;
+    }
+    .section4-blok {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .section4-blok__section-1 {
+        width: 100%;
+    }
+    .section4-blok__section-1 p {
+        font-size: 80%;
+    }
+    .section4-blok__section-1 h1 {
+        font-size: 160%;
+    }
+    .section4-blok__section-2 {
+        width: 100%;
+    }
+    .section4-blok__section-2 p {
+        font-size: 80%;
+    }
+    .section4-footer {
+        justify-content: center;
+    }
+    .section4-footer__section {
+        padding: 35px 25px;
+        max-width: 300px;
+    }
+    .section4-footer__section__p-1 {
+        font-size: 160%;
+        font-weight: 600;
+    }
+    .section4-footer__section__p-2 {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 520px) {
+    .section4-blok__section-2 {
+        flex-direction: column;
+    }
+}

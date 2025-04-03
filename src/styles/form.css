@@ -1,0 +1,195 @@
+.form {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.849) 16%, hsla(0, 0%, 0%, 0.849)), 
+                  url(/public/images/form-bg.jpg);
+    padding: 70px 0;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.form-header__section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header__section-1 p {
+    letter-spacing: 2px;
+    font-size: 90%;
+    color: var(--dark-color);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.form-header__section-1 h1 {
+    margin-bottom: 10px;
+    color: #fff;
+    max-width: 450px;
+}
+
+.form-header__section-1 h1 span {
+    color: transparent; /* Убираем обычный цвет текста */
+    font-family: var(--playfair);
+    font-style: italic;
+    background-image: linear-gradient(to right, #d5aa6d, #9b6f45); /* Задаем градиент */
+    background-clip: text; /* Применяем градиент к тексту */
+    -webkit-background-clip: text; /* Для кроссбраузерности */
+    padding: 0 2px;
+}
+
+.form-header__section-2 {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+.form-header__section-2__part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-header__section-2__part div {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+.form-header__icon {
+    width: 35px;
+    height: 35px;
+    color: var(--main-color);
+}
+
+.form-header__section-2__part p {
+    color: #fff;
+    max-width: 250px;
+}
+
+.form-header__section-2__part a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form-header__section-2__part a:hover {
+    opacity: .5;
+}
+
+
+.form-blok {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-blok__section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-blok__section input {
+    width: 90%;
+    transition: .5s;
+    border: 1px solid var(--dark-color);
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.form-blok__section input:focus {
+    border-color: var(--main-color);
+}
+
+.form-blok__section input::placeholder {
+    color: #ffffffd4;
+}
+
+.form-blok__section textarea {
+    width: 100%;
+    transition: .5s;
+    border: 1px solid var(--dark-color);
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    font-family: var(--poppins-sans);
+    resize: none;
+    height: 15vh;
+}
+
+.form-blok__section textarea:focus {
+    border-color: var(--main-color);
+}
+
+.form-blok__section textarea::placeholder {
+    color: #ffffffd4;
+}
+
+.form-blok__section button {
+    width: 100%;
+    font-size: 105%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--main-color);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form-blok__section button:hover {
+    background-color: var(--dark-color);
+}
+
+@media (max-width: 880px) {
+    .form-header {
+        flex-direction: column;
+    }
+    .form-header__section-1 {
+        width: 100%;
+    }
+    .form-header__section-2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: 50px 0;
+    }
+    .form-header__section-1 p {
+        font-size: 80%;
+    }
+    .form-header__section-1 h1 {
+        font-size: 160%;
+    }
+    .form-header__section-2 {
+        flex-direction: column;
+    }
+    .form-header__section-2 div p {
+        font-size: 90%;
+    }
+    .form-header__section-2 div a {
+        font-size: 90%;
+    }
+    .form-header__icon {
+        width: 25px;
+        height: 25px;
+    }
+    .form-blok__section {
+        flex-direction: column;
+    }
+    .form-blok__section input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,160 @@
+.exp {
+    padding: 70px 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.exp-header__section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-header__section-1 p {
+    letter-spacing: 2px;
+    font-size: 90%;
+    color: var(--dark-color);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.exp-header__section-1 h1 {
+    margin-bottom: 10px;
+    color: var(--title-color);
+    max-width: 470px;
+}
+
+.exp-header__section-1 h1 span {
+    color: transparent; /* Убираем обычный цвет текста */
+    font-family: var(--playfair);
+    font-style: italic;
+    background-image: linear-gradient(to right, #d5aa6d, #9b6f45); /* Задаем градиент */
+    background-clip: text; /* Применяем градиент к тексту */
+    -webkit-background-clip: text; /* Для кроссбраузерности */
+    padding: 0 2px;
+}
+
+.exp-header__section-2 p {
+    max-width: 500px;
+    font-size: 95%;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+}
+
+.exp-blok {
+    display: flex;
+}
+
+.exp-blok__section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 320px;
+    overflow: hidden;
+    min-height: 450px;
+}
+
+.slick-slide {
+    padding: 0 20px 0 0;
+}
+
+.exp-blok__section__container {
+    padding: 30px 20px;
+}
+
+.exp-blok__section__container__header {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.exp-blok__section__container__header__icon {
+    width: 15px;
+    height: 15px;
+    color: var(--subtitle-color);
+    margin-top: 5px;
+}
+
+.exp-blok__section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.exp-blok__section p {
+    max-width: 300px;
+    color: var(--subtitle-color);
+    font-size: 80%;
+    min-height: 50px;
+}
+
+.exp-blok__section h3 {
+    max-width: 300px;
+    margin-bottom: 10px;
+    min-height: 80px;
+    color: var(--dark-color);
+}
+
+.exp-blok__section a {
+    text-decoration: none;
+}
+
+.exp-blok__section a button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--title-color);
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.exp-blok__section a button:hover {
+    opacity: .5;
+}
+
+@media (max-width: 768px) {
+    .exp {
+        padding: 50px 0;
+    }
+    .exp-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    .exp-header__section-1 p {
+        font-size: 80%;
+    }
+    .exp-header__section-1 h1 {
+        font-size: 160%;
+    }
+    .exp-header__section-2 p {
+        font-size: 80%;
+    }
+    .exp-blok__section__container__header__icon {
+        width: 17px;
+        height: 17px;
+    }
+    .exp-blok__section__container__header p {
+        font-size: 70%;
+        min-height: 10px;
+    }
+    .exp-blok__section__container h3 {
+        font-size: 90%;
+        min-height: 0;
+        margin-bottom: 15px;
+    }
+    .exp-blok__section__container button {
+        font-size: 80%;
+    }
+    .exp-blok__section {
+        min-height: 350px;
+    }
+}
