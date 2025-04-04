@@ -37,18 +37,18 @@
 
 .video-title {
     font-weight: 600;
-    font-size: 400%;
+    font-size: 370%;
 }
 
 .video-subtitle {
     max-width: 600px;
-    font-size: 140%;
+    font-size: 130%;
     margin-bottom: 50px;
 }
 
 .video-subtitle2 {
     letter-spacing: 1px;
-    font-size: 120%;
+    font-size: 110%;
     font-weight: 300;
 }
 
@@ -62,15 +62,15 @@
 }
 
 .video-bg__content a button {
-    padding: 20px 30px;
+    padding: 15px 25px;
     font-size: 120%;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: var(--main-color);
     color: #fff;
     border: none;
     cursor: pointer;
     transition: .5s;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .video-bg__content a button:hover {

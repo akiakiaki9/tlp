@@ -9,6 +9,7 @@ import Form from '../components/Form'
 import Footer2 from '../components/Footer2'
 import Chooser from '../components/Chooser'
 import Experience from '../components/Experience'
+import Footer from '../components/Footer'
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <Form />
             <Experience />
             <Chooser />
+            <Footer />
             <Footer2 />
         </div>
     )

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTelegramPlane } from "react-icons/fa";
-import { FaThreads } from "react-icons/fa6";
+import { FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import Switcher from './Switcher';
 
 export default function Navbar() {
@@ -9,7 +8,7 @@ export default function Navbar() {
         <nav className='navbar'>
             <div className="navbar-blok">
                 <div className="navbar-blok__section">
-                    <Link to='/'><img src="/images/logo.JPG" alt="TLP Logo" /></Link>
+                    <Link to='/'><img src="/images/logo.png" alt="TLP Logo" /></Link>
                 </div>
                 <div className="navbar-blok__section">
                     <Switcher />
@@ -22,8 +21,8 @@ export default function Navbar() {
                             <a href="https://t.me/TLP_tlp">
                                 <FaTelegramPlane className="navbar__icon" />
                             </a>
-                            <a href="https://www.threads.net/@advokat_tillayev">
-                                <FaThreads className="navbar__icon" />
+                            <a href="https://wa.me/message/7G56GOTVWLQEK1">
+                                <FaWhatsapp className="navbar__icon" />
                             </a>
                         </div>
                     </div>
