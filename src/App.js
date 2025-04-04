@@ -18,12 +18,14 @@ import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ExperienceDetail from './pages/ExperienceDetail'
 import ScrolledPage from './ScrolledPage'
+import LoadVideo from './components/LoadVideo'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <ScrolledPage />
+      <LoadVideo />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/experience/:id' element={<ExperienceDetail />} />
