@@ -19,7 +19,7 @@ export default function Footer() {
                         </div>
                         <div className="footer-blok__section-1__part">
                             <IoMdMail className='footer-blok__section-1__icon' />
-                            <a href="mailto:xoliqjon@gmail.com">xoliqjon@gmail.com</a>
+                            <a href="mailto:xoliqjon@gmail.com">tillayevlawpartners@gmail.com</a>
                         </div>
                     </div>
                     <div className="footer-blok__section-2">
