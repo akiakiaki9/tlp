@@ -39,14 +39,12 @@ export default function Experience() {
             <div className="main">
                 <div className="exp-header">
                     <div className="exp-header__section-1">
-                        <p>Experience</p>
-                        <h1>Learn something more from our <span>experience</span></h1>
+                        <p>{t("exp_1")}</p>
+                        <h1>{t("exp_2")}</h1>
                         <div className='subtitle-line'></div>
                     </div>
                     <div className="exp-header__section-2">
-                        <p>This page provides information on legal developments and updates that may be useful to our clients. For more
-                            information or to contact us, please use the contact details on the page.
-                        </p>
+                        <p>{t("exp_3")}</p>
                     </div>
                 </div>
                 <Slider {...settings} className="exp-blok">
@@ -59,7 +57,7 @@ export default function Experience() {
                                     <p>{item.duration}</p>
                                 </div>
                                 <h3>{item.title}</h3>
-                                <Link to={`/experience/${item.id}`}><button>View More</button></Link>
+                                <Link to={`/experience/${item.id}`}><button>{t("exp_4")}</button></Link>
                             </div>
                         </div>
                     ))}

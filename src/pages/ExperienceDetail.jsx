@@ -23,11 +23,11 @@ export default function ExperienceDetail() {
             <div className="pagename">
                 <div className="pagename-blok">
                     <div>
-                        <h1>Faires</h1>
+                        <h1>Detail</h1>
                     </div>
                     <div>
                         <Link to="/">
-                            <p className="pagename-blok__p-1">Home</p>
+                            <p className="pagename-blok__p-1">{t("page_1")}</p>
                         </Link>
                         <GoDotFill className="pagename-icon" />
                         <p className="pagename-blok__p-2">
@@ -60,7 +60,7 @@ export default function ExperienceDetail() {
                             </div>
                         </div>
                         <div className="detail-blok__section-2">
-                            <h3>Others</h3>
+                            <h3>{t("page_2")}</h3>
                             <div className='subtitle-line'></div>
                             <br />
                             <div className="detail-blok__section-2__container">

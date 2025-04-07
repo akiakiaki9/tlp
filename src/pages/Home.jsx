@@ -10,6 +10,7 @@ import Footer2 from '../components/Footer2'
 import Chooser from '../components/Chooser'
 import Experience from '../components/Experience'
 import Footer from '../components/Footer'
+import Licences from '../components/Licences'
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <Section4 />
             <Form />
             <Experience />
+            <Licences />
             <Chooser />
             <Footer />
             <Footer2 />

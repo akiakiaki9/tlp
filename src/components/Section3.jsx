@@ -3,32 +3,34 @@ import { RiAdminFill } from "react-icons/ri";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { GrMoney } from "react-icons/gr";
 import { RiCriminalLine } from "react-icons/ri";
+import { useTranslation } from 'react-i18next';
 
 export default function Section3() {
+    const { t } = useTranslation();
     const SECTION3 = [
         {
             id: 1,
             icon: RiAdminFill,
-            title: 'Administrative law',
-            subtitle: 'Governing public administration: rules, regulations, and legal framework for government actions and citizen interactions.'
+            title: t("service_3"),
+            subtitle: t("service_4")
         },
         {
             id: 2,
             icon: BsFillPeopleFill,
-            title: 'Civil law',
-            subtitle: 'Regulating private disputes: contracts, property, family, and torts, ensuring fairness and resolving conflicts between individuals.'
+            title: t("service_5"),
+            subtitle: t("service_6")
         },
         {
             id: 3,
             icon: RiCriminalLine,
-            title: 'Criminal law',
-            subtitle: 'Enforcing societal norms: defining offenses, prosecuting offenders, and protecting public safety through legal sanctions and procedures.'
+            title: t("service_7"),
+            subtitle: t("service_8")
         },
         {
             id: 4,
             icon: GrMoney,
-            title: 'Economic law',
-            subtitle: 'Structuring market activities: regulating trade, finance, and competition to foster economic stability and promote equitable growth.'
+            title: t("service_9"),
+            subtitle: t("service_10")
         },
     ];
 
@@ -36,8 +38,8 @@ export default function Section3() {
         <div className='section3'>
             <div className="main">
                 <div className="section3-sar">
-                    <p>Services</p>
-                    <h1>We are here to fight against any violance with <span>experience</span></h1>
+                    <p>{t("service_1")}</p>
+                    <h1>{t("service_2")}</h1>
                     <div className='subtitle-line'></div>
                 </div>
                 <div className="section3-blok">

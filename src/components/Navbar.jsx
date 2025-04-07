@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import Switcher from './Switcher';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
+    const { t } = useTranslation();
     return (
         <nav className='navbar'>
             <div className="navbar-blok">
@@ -13,7 +15,7 @@ export default function Navbar() {
                 <div className="navbar-blok__section">
                     <Switcher />
                     <div className="navbar-blok__section__container">
-                        <p>Social Links</p>
+                        <p>{t("navbar")}</p>
                         <div>
                             <a href="https://www.instagram.com/advokat_tillayev/">
                                 <FaInstagram className="navbar__icon" />

@@ -13,6 +13,8 @@ import './styles/chooser.css'
 import './styles/exp.css'
 import './styles/detail.css'
 import './styles/pagename.css'
+import './styles/licence.css'
+import './styles/modal.css'
 
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

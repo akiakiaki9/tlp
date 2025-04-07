@@ -2,14 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaPhone, FaTelegramPlane, FaInstagram } from "react-icons/fa";
 import { IoMdMail, IoLogoWhatsapp } from "react-icons/io";
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+    const { t } = useTranslation();
     return (
         <div className='footer'>
             <div className="main">
                 <div className="footer-header">
                     <Link to='/'><img src="/images/logo.PNG" alt="TLP Logo" /></Link>
-                    <p>A law firm providing high-quality legal services to businesses and individuals</p>
+                    <p>{t("footer_1")}</p>
                 </div>
                 <div className="footer-blok">
                     <div className="footer-blok__section-1">
@@ -23,7 +25,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="footer-blok__section-2">
-                        <p>Social links</p>
+                        <p>{t("footer_2")}</p>
                         <div>
                             <a href="https://www.instagram.com/advokat_tillayev"><FaTelegramPlane className='footer-blok__section-2__icon' /></a>
                             <a href="https://t.me/TLP_tlp"><FaInstagram className='footer-blok__section-2__icon' /></a>

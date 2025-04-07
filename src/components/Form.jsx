@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { IoLocationOutline } from "react-icons/io5";
 import { TbPhoneCall } from "react-icons/tb";
 import { PiChats } from "react-icons/pi";
+import { useTranslation } from 'react-i18next';
 
 export default function Form() {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         theme: "Новое сообщение от пользователя к сайту Tillayev Law Partners!",
         firstName: '',
@@ -50,15 +52,15 @@ export default function Form() {
             <div className="main">
                 <div className="form-header">
                     <div className="form-header__section-1">
-                        <p>Contact Us</p>
-                        <h1>Feel free to ask something we are <span>here</span></h1>
+                        <p>{t("form_1")}</p>
+                        <h1>{t("form_2")}</h1>
                         <div className='subtitle-line'></div>
                     </div>
                     <div className="form-header__section-2">
                         <div className="form-header__section-2__part">
                             <div>
                                 <IoLocationOutline className='form-header__icon' />
-                                <p>Mirobod district, Chimkent street, house 17</p>
+                                <p>{t("form_3")}</p>
                             </div>
                         </div>
                         <div className="form-header__section-2__part">
@@ -75,15 +77,15 @@ export default function Form() {
                 </div>
                 <form className="form-blok" onSubmit={handleSubmit}>
                     <div className="form-blok__section">
-                        <input type="text" placeholder='First Name' name="firstName" value={formData.firstName} onChange={handleChange} />
-                        <input type="text" placeholder='Last Name' name="lastName" value={formData.lastName} onChange={handleChange} />
-                        <input type="email" placeholder='Email Address' name="email" value={formData.email} onChange={handleChange} />
+                        <input type="text" placeholder={t("form_4")} name="firstName" value={formData.firstName} onChange={handleChange} />
+                        <input type="text" placeholder={t("form_5")} name="lastName" value={formData.lastName} onChange={handleChange} />
+                        <input type="email" placeholder={t("form_6")} name="email" value={formData.email} onChange={handleChange} />
                     </div>
                     <div className="form-blok__section">
-                        <textarea placeholder='Message' name="message" value={formData.message} onChange={handleChange} />
+                        <textarea placeholder={t("form_7")} name="message" value={formData.message} onChange={handleChange} />
                     </div>
                     <div className="form-blok__section">
-                        <button type='submit'>Submit</button>
+                        <button type='submit'>{t("form_8")}</button>
                     </div>
                 </form>
             </div>

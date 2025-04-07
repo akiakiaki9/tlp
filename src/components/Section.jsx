@@ -2,26 +2,28 @@ import React from 'react';
 import { IoIosPeople } from "react-icons/io";
 import { SiAdguard } from "react-icons/si";
 import { FaUserClock } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
 export default function Section() {
+    const { t } = useTranslation();
     const SECTION = [
         {
             id: 1,
             icon: IoIosPeople,
-            title: 'Random words for each',
-            subtitle: 'Experienced counsel in ad-hoc and institutional arbitration in legal hubs like Uzbekistan'
+            title: t("section_1"),
+            subtitle: t("section_2")
         },
         {
             id: 3,
             icon: SiAdguard,
-            title: 'Random words for each',
-            subtitle: 'Experienced counsel in ad-hoc and institutional arbitration in legal hubs like Uzbekistan'
+            title: t("section_3"),
+            subtitle: t("section_4")
         },
         {
             id: 2,
             icon: FaUserClock,
-            title: 'Random words for each',
-            subtitle: 'Experienced counsel in ad-hoc and institutional arbitration in legal hubs like Uzbekistan'
+            title: t("section_5"),
+            subtitle: t("section_6")
         }
     ];
 
