@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { IoLocationOutline } from "react-icons/io5";
 import { TbPhoneCall } from "react-icons/tb";
 import { PiChats } from "react-icons/pi";
@@ -19,10 +19,17 @@ export default function Form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        const formattedData = {
+            theme: formData.theme,
+            name: `${formData.firstName} ${formData.lastName}`,
+            email: formData.email,
+            message: formData.message
+        };
+
         const response = await fetch('https://formspree.io/f/xeoapoyo', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(formattedData)
         });
 
         if (response.ok) {
@@ -37,13 +44,14 @@ export default function Form() {
             alert('Failed to send message.');
         }
     };
+
     return (
         <div className='form' id='contacts'>
             <div className="main">
                 <div className="form-header">
                     <div className="form-header__section-1">
                         <p>Contact Us</p>
-                        <h1>Feel free to ask somthing we are <span>here</span></h1>
+                        <h1>Feel free to ask something we are <span>here</span></h1>
                         <div className='subtitle-line'></div>
                     </div>
                     <div className="form-header__section-2">
@@ -60,19 +68,19 @@ export default function Form() {
                             </div>
                             <div>
                                 <PiChats className='form-header__icon' />
-                                <a href='mailto:xoliqjon@gmail.com'>tillayevlawpartners@gmail.com</a>
+                                <a href='mailto:tillayevlawpartners@gmail.com'>tillayevlawpartners@gmail.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <form className="form-blok" onSubmit={handleSubmit}>
                     <div className="form-blok__section">
-                        <input type="text" placeholder='First Name' name="First Name" value={formData.firstName} onChange={handleChange} />
-                        <input type="text" placeholder='Last Name' name="Last Name" value={formData.lastName} onChange={handleChange} />
-                        <input type="email" placeholder='Email Address' name="Email" value={formData.email} onChange={handleChange} />
+                        <input type="text" placeholder='First Name' name="firstName" value={formData.firstName} onChange={handleChange} />
+                        <input type="text" placeholder='Last Name' name="lastName" value={formData.lastName} onChange={handleChange} />
+                        <input type="email" placeholder='Email Address' name="email" value={formData.email} onChange={handleChange} />
                     </div>
                     <div className="form-blok__section">
-                        <textarea type="text" placeholder='Message' name="Message" value={formData.message} onChange={handleChange} />
+                        <textarea placeholder='Message' name="message" value={formData.message} onChange={handleChange} />
                     </div>
                     <div className="form-blok__section">
                         <button type='submit'>Submit</button>
@@ -80,5 +88,5 @@ export default function Form() {
                 </form>
             </div>
         </div>
-    )
+    );
 };
