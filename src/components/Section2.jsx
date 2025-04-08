@@ -49,7 +49,7 @@ export default function Section2() {
                     </div>
                     <div className="section2-blok__section section2-blok__section-2">
                         <div className="section2-blok__section-2__blok">
-                            <h1>35</h1>
+                            <h1>15</h1>
                             <p>{t("about_10")}</p>
                         </div>
                     </div>
