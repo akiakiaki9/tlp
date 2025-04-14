@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://topnews.uz/sitemap.xml
+Sitemap: https://tlpartners.uz/sitemap.xml
